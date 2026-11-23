@@ -114,3 +114,16 @@ extract:
 tenant:
   # Enable cross-tenant access (can be enabled for intranet environments)
   enable_cross_tenant_access: false
+
+# Authentication and registration
+auth:
+  # Registration mode:
+  #   self_serve      - anyone may register (default); a new workspace is auto-created
+  #   invite_register - new accounts require a valid invitation link
+  #   invite_only     - no password registration at all (existing accounts may accept invites)
+  # NOTE: the legacy env var DISABLE_REGISTRATION=true forces invite_only, which would
+  # also block invite-based signup. Keep it unset and use registration_mode instead.
+  registration_mode: invite_register
+  # What a public password registration provisions. create_personal keeps the
+  # historical one-user-one-workspace behaviour.
+  default_tenant_mode: create_personal
