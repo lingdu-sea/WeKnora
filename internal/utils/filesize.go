@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	defaultMaxFileSizeMB        = 50
+	defaultMaxFileSizeMB        = 200
 	defaultMaxSkillBundleSizeMB = 256
 	// maxSkillBundleSizeMBCeiling matches the install-time uncompressed
 	// archive cap: a download larger than that cannot become a valid skill.
@@ -14,7 +14,7 @@ const (
 )
 
 // GetMaxFileSize returns the maximum file upload size in bytes.
-// Default is 50MB, can be configured via MAX_FILE_SIZE_MB environment variable.
+// Default is 200MB, can be configured via MAX_FILE_SIZE_MB environment variable.
 //
 // MAX_FILE_SIZE_MB is intentionally a deploy-time-only knob (NOT a
 // runtime system_setting). The effective upload limit is gated by

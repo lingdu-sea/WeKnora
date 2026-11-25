@@ -167,7 +167,7 @@ docreader:
   environment:
     - MINIO_ENDPOINT=minio:9000
     - MINIO_PUBLIC_ENDPOINT=http://localhost:9000
-    - MAX_FILE_SIZE_MB=50
+    - MAX_FILE_SIZE_MB=200
 ```
 
 ### 高级配置（启用 MinerU）
@@ -192,7 +192,7 @@ docreader:
     - COS_REGION=ap-guangzhou
     - COS_BUCKET_NAME=your-bucket
     - COS_APP_ID=your_app_id
-    - MAX_FILE_SIZE_MB=50
+    - MAX_FILE_SIZE_MB=200
 ```
 
 ### 使用阿里云 OSS
@@ -206,7 +206,7 @@ docreader:
     - OSS_ENDPOINT=oss-cn-hangzhou.aliyuncs.com
     - OSS_BUCKET_NAME=your-bucket
     - OSS_REGION=cn-hangzhou
-    - MAX_FILE_SIZE_MB=50
+    - MAX_FILE_SIZE_MB=200
 ```
 
 ## 常见问题

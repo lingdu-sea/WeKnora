@@ -89,7 +89,7 @@ class FileSizeConfigTest(unittest.TestCase):
     def test_dump_reports_default_file_size_in_mb(self):
         cfg = self._load_file_size({}, 50)
         with patch.object(config, "CONFIG", cfg):
-            self.assertEqual(config.dump_config()["DOCREADER_GRPC_MAX_FILE_SIZE_MB"], 50)
+            self.assertEqual(config.dump_config()["DOCREADER_GRPC_MAX_FILE_SIZE_MB"], 200)
 
     def test_dump_reports_namespaced_file_size_in_mb(self):
         cfg = self._load_file_size({"DOCREADER_GRPC_MAX_FILE_SIZE_MB": "7"}, 7)
